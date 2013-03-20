@@ -1,0 +1,300 @@
+<rss version="2.0">
+  <channel>
+    <title>Latest Results for Algorithmica</title>
+    <description>The latest content available from Springer</description>
+    <link>http://link.springer.com</link>
+    <item>
+      <title>On the Largest Empty Axis-Parallel Box Amidst &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; Points</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We give the first efficient (1−&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)-approximation algorithm for the following problem: Given an axis-parallel &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;-dimensional box &lt;em class=&quot;a-plus-plus&quot;&gt;R&lt;/em&gt; in ℝ&lt;sup class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;
+                      &lt;/sup&gt; containing &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; points, compute a &lt;em class=&quot;a-plus-plus&quot;&gt;maximum-volume empty axis-parallel&lt;/em&gt;
+                      &lt;em class=&quot;a-plus-plus&quot;&gt;d-dimensional box&lt;/em&gt; contained in &lt;em class=&quot;a-plus-plus&quot;&gt;R&lt;/em&gt;. The minimum of this quantity over all such point sets is of the order &lt;span class=&quot;a-plus-plus inline-equation id-i-eq1&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\Theta (\frac {1}{n} )$&lt;/span&gt;
+                      &lt;/span&gt;. Our algorithm finds an empty axis-aligned box whose volume is at least (1−&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;) of the maximum in &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;((8&lt;em class=&quot;a-plus-plus&quot;&gt;edε&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;−2&lt;/sup&gt;)&lt;sup class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;
+                      &lt;/sup&gt;⋅&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;log&lt;sup class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;
+                      &lt;/sup&gt;
+                      &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;) time. No previous efficient exact or approximation algorithms were known for this problem for &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;≥4. As the problem has been recently shown to be NP-hard in arbitrarily high dimensions (&lt;em class=&quot;a-plus-plus&quot;&gt;i.e.&lt;/em&gt;, when &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt; is part of the input), the existence of an efficient exact algorithm is unlikely.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We also present a (1−&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)-approximation algorithm that, given an axis-parallel &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;-dimensional cube &lt;em class=&quot;a-plus-plus&quot;&gt;R&lt;/em&gt; in ℝ&lt;sup class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;
+                      &lt;/sup&gt; containing &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; points, computes a &lt;em class=&quot;a-plus-plus&quot;&gt;maximum-volume empty axis-parallel hypercube&lt;/em&gt; contained in &lt;em class=&quot;a-plus-plus&quot;&gt;R&lt;/em&gt;. The minimum of this quantity over all such point sets is also shown to be of the order &lt;span class=&quot;a-plus-plus inline-equation id-i-eq2&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\Theta (\frac{1}{n} )$&lt;/span&gt;
+                      &lt;/span&gt;. A faster (1−&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)-approximation algorithm, with a milder dependence on &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt; in the running time, is obtained in this case.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9635-5</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9635-5</guid>
+    </item>
+    <item>
+      <title>Lower Bounds on Performance of Metric Tree Indexing Schemes for Exact Similarity Search in High Dimensions</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Within a mathematically rigorous model, we analyse the curse of dimensionality for deterministic exact similarity search in the context of popular indexing schemes: metric trees. The datasets &lt;em class=&quot;a-plus-plus&quot;&gt;X&lt;/em&gt; are sampled randomly from a domain &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;, equipped with a distance, &lt;em class=&quot;a-plus-plus&quot;&gt;ρ&lt;/em&gt;, and an underlying probability distribution, &lt;em class=&quot;a-plus-plus&quot;&gt;μ&lt;/em&gt;. While performing an asymptotic analysis, we send the intrinsic dimension &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt; of &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt; to infinity, and assume that the size of a dataset, &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;, grows superpolynomially yet subexponentially in &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;. Exact similarity search refers to finding the nearest neighbour in the dataset &lt;em class=&quot;a-plus-plus&quot;&gt;X&lt;/em&gt; to a query point &lt;em class=&quot;a-plus-plus&quot;&gt;ω&lt;/em&gt;∈&lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;, where the query points are subject to the same probability distribution &lt;em class=&quot;a-plus-plus&quot;&gt;μ&lt;/em&gt; as datapoints. Let &lt;span class=&quot;a-plus-plus inline-equation id-i-eq1&quot;&gt;
+                        
+                      &lt;/span&gt; denote a class of all 1-Lipschitz functions on &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt; that can be used as decision functions in constructing a hierarchical metric tree indexing scheme. Suppose the VC dimension of the class of all sets {&lt;em class=&quot;a-plus-plus&quot;&gt;ω&lt;/em&gt;:&lt;em class=&quot;a-plus-plus&quot;&gt;f&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;ω&lt;/em&gt;)≥&lt;em class=&quot;a-plus-plus&quot;&gt;a&lt;/em&gt;}, &lt;em class=&quot;a-plus-plus&quot;&gt;a&lt;/em&gt;∈ℝ is &lt;em class=&quot;a-plus-plus&quot;&gt;o&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;1/4&lt;/sup&gt;/log&lt;sup class=&quot;a-plus-plus&quot;&gt;2&lt;/sup&gt;
+                      &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;). (In view of a 1995 result of Goldberg and Jerrum, even a stronger complexity assumption &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(1)&lt;/sup&gt; is reasonable.) We deduce the &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;1/4&lt;/sup&gt;) lower bound on the expected average case performance of hierarchical metric-tree based indexing schemes for exact similarity search in (&lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;X&lt;/em&gt;). In paricular, this bound is superpolynomial in &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9638-2</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9638-2</guid>
+    </item>
+    <item>
+      <title>Computing the Maximum Degree of Minors in Mixed Polynomial Matrices via Combinatorial Relaxation</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Mixed polynomial matrices are polynomial matrices with two kinds of nonzero coefficients: fixed constants that account for conservation laws and independent parameters that represent physical characteristics. The computation of their maximum degrees of minors is known to be reducible to valuated independent assignment problems, which can be solved by polynomial numbers of additions, subtractions, and multiplications of rational functions. However, these arithmetic operations on rational functions are much more expensive than those on constants.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;In this paper, we present a new algorithm of combinatorial relaxation type. The algorithm finds a combinatorial estimate of the maximum degree by solving a weighted bipartite matching problem, and checks if the estimate is equal to the true value by solving independent matching problems. The algorithm mainly relies on fast combinatorial algorithms and performs numerical computation only when necessary. In addition, it requires no arithmetic operations on rational functions. As a byproduct, this method yields a new algorithm for solving a linear valuated independent assignment problem.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9640-8</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9640-8</guid>
+    </item>
+    <item>
+      <title>Improved Bounds for Finger Search on a RAM</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We present a new finger search tree with &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(loglog&lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;) expected search time in the Random Access Machine (RAM) model of computation for a large class of input distributions. The parameter &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt; represents the number of elements (distance) between the search element and an element pointed to by a finger, in a finger search tree that stores &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; elements. Our data structure improves upon a previous result by Andersson and Mattsson that exhibits expected &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(loglog&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;) search time by incorporating the distance &lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt; into the search time complexity, and thus removing the dependence on &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;. We are also able to show that the search time is &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(loglog&lt;em class=&quot;a-plus-plus&quot;&gt;d&lt;/em&gt;+&lt;em class=&quot;a-plus-plus&quot;&gt;ϕ&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;)) with high probability, where &lt;em class=&quot;a-plus-plus&quot;&gt;ϕ&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;) is &lt;em class=&quot;a-plus-plus&quot;&gt;any&lt;/em&gt; slowly growing function of &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;. For the need of the analysis we model the updates by a “balls and bins” combinatorial game that is interesting in its own right as it involves insertions and deletions of balls according to an unknown distribution.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9636-4</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9636-4</guid>
+    </item>
+    <item>
+      <title>Smoothed Analysis of Partitioning Algorithms for Euclidean Functionals</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Euclidean optimization problems such as TSP and minimum-length matching admit fast partitioning algorithms that compute near-optimal solutions on typical instances.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;In order to explain this performance, we develop a general framework for the application of smoothed analysis to partitioning algorithms for Euclidean optimization problems. Our framework can be used to analyze both the running-time and the approximation ratio of such algorithms. We apply our framework to obtain smoothed analyses of Dyer and Frieze’s partitioning algorithm for Euclidean matching, Karp’s partitioning scheme for the TSP, a heuristic for Steiner trees, and a heuristic for degree-bounded minimum-length spanning trees.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9643-5</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9643-5</guid>
+    </item>
+    <item>
+      <title>Constructing the R* Consensus Tree of Two Trees in Subcubic Time</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;The previously fastest algorithms for computing the R* consensus tree of two given (rooted) phylogenetic trees with a leaf label set of cardinality &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; run in &lt;em class=&quot;a-plus-plus&quot;&gt;Θ&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;3&lt;/sup&gt;) time (Bryant and Berry in Adv. Appl. Math. 27(4):705–732, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r4&quot;&gt;2001&lt;/span&gt;; Kannan et al. in SIAM J. Comput. 27(6):1695–1724, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r14&quot;&gt;1998&lt;/span&gt;). In this manuscript, we describe a new &lt;span class=&quot;a-plus-plus inline-equation id-i-eq1&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$O(n^{2} \sqrt{\log n})$&lt;/span&gt;
+                      &lt;/span&gt;-time algorithm to solve the problem. This is a significant improvement because the R* consensus tree is defined in terms of a set &lt;span class=&quot;a-plus-plus inline-equation id-i-eq2&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\mathcal {R}_{\mathit{maj}}$&lt;/span&gt;
+                      &lt;/span&gt; which may contain &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;3&lt;/sup&gt;) elements, so any direct approach that explicitly constructs &lt;span class=&quot;a-plus-plus inline-equation id-i-eq3&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\mathcal {R}_{\mathit{maj}}$&lt;/span&gt;
+                      &lt;/span&gt; requires &lt;em class=&quot;a-plus-plus&quot;&gt;Ω&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;3&lt;/sup&gt;) time.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9639-1</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9639-1</guid>
+    </item>
+    <item>
+      <title>PASS Approximation: A Framework for Analyzing and Designing Heuristics</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We introduce a new framework for designing and analyzing algorithms. Our framework applies best to problems that are inapproximable according to the standard worst-case analysis. We circumvent such negative results by designing guarantees for classes of instances, parameterized according to properties of the optimal solution. Given our parameterized approximation, called &lt;em class=&quot;a-plus-plus&quot;&gt;PArametrized by the Signature of the Solution (PASS)&lt;/em&gt; approximation, we design algorithms with optimal approximation ratios for problems with additive and submodular objective functions such as the capacitated maximum facility location problems. We consider two types of algorithms for these problems. For greedy algorithms, our framework provides a justification for preferring a certain natural greedy rule over some alternative greedy rules that have been used in similar contexts. For LP-based algorithms, we show that the natural LP relaxation for these problems is not optimal in our framework. We design a new LP relaxation and show that this LP relaxation coupled with a new randomized rounding technique is optimal in our framework.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;In passing, we note that our results strictly improve over previous results of Kleinberg et al. (J. ACM 51(2):263–280, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r15&quot;&gt;2004&lt;/span&gt;) concerning the approximation ratio of the greedy algorithm.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9646-2</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9646-2</guid>
+    </item>
+    <item>
+      <title>A Linear-Time Algorithm for Finding Locally Connected Spanning Trees on Circular-Arc Graphs</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Suppose that &lt;em class=&quot;a-plus-plus&quot;&gt;T&lt;/em&gt; is a spanning tree of a graph &lt;em class=&quot;a-plus-plus&quot;&gt;G&lt;/em&gt;. &lt;em class=&quot;a-plus-plus&quot;&gt;T&lt;/em&gt; is called a locally connected spanning tree of &lt;em class=&quot;a-plus-plus&quot;&gt;G&lt;/em&gt; if for every vertex of &lt;em class=&quot;a-plus-plus&quot;&gt;T&lt;/em&gt;, the set of all its neighbors in &lt;em class=&quot;a-plus-plus&quot;&gt;T&lt;/em&gt; induces a connected subgraph of &lt;em class=&quot;a-plus-plus&quot;&gt;G&lt;/em&gt;. In this paper, given an intersection model of a circular-arc graph, an &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;)-time algorithm is proposed that can determine whether the circular-arc graph contains a locally connected spanning tree or not, and produce one if it exists.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9641-7</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9641-7</guid>
+    </item>
+    <item>
+      <title>List Factoring and Relative Worst Order Analysis</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Relative worst order analysis is a supplement or alternative to competitive analysis which has been shown to give results more in accordance with observed behavior of online algorithms for a range of different online problems. The contribution of this paper is twofold. As the first contribution, it adds the static list accessing problem to the collection of online problems where relative worst order analysis gives better results. List accessing is a classic data structuring problem of maintaining optimal ordering in a linked list. It is also one of the classic problems in online algorithms, in that it is used as a model problem, along with paging and a few other problems, when trying out new techniques and quality measures. As the second contribution, this paper adds the non-trivial supplementary proof technique of list factoring to the theoretical toolbox for relative worst order analysis. List factoring is perhaps the most successful technique for analyzing list accessing algorithms, reducing the complexity of the analysis of algorithms on full-length lists to lists of length two.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9637-3</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9637-3</guid>
+    </item>
+    <item>
+      <title>Fast Phylogeny Reconstruction Through Learning of Ancestral Sequences</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Given natural limitations on the length DNA sequences, designing phylogenetic reconstruction methods which are reliable under limited information is a crucial endeavor. There have been two approaches to this problem: reconstructing partial but reliable information about the tree (Mossel in IEEE Comput. Biol. Bioinform. 4:108–116, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r13&quot;&gt;2007&lt;/span&gt;; Daskalakis et al. in SIAM J. Discrete Math. 25:872–893, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r4&quot;&gt;2011&lt;/span&gt;; Daskalakis et al. in Proc. of RECOMB 2006, pp. 281–295, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r2&quot;&gt;2006&lt;/span&gt;; Gronau et al. in Proc. of the 19th Annual SODA 2008, pp. 379–388, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r9&quot;&gt;2008&lt;/span&gt;), and reaching “deeper” in the tree through reconstruction of ancestral sequences. In the latter category, Daskalakis et al. (Proc. of the 38th Annual STOC, pp. 159–168, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r3&quot;&gt;2006&lt;/span&gt;) settled an important conjecture of M. Steel (My favourite conjecture. Preprint, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r16&quot;&gt;2001&lt;/span&gt;), showing that, under the CFN model of evolution, all trees on &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; leaves with edge lengths bounded by the Ising model phase transition can be recovered with high probability from genomes of length &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(log&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;) with a polynomial time algorithm. Their methods had a running time of &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;10&lt;/sup&gt;).&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Here we enhance our methods from Daskalakis et al. (Proc. of RECOMB 2006, pp. 281–295, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r2&quot;&gt;2006&lt;/span&gt;) with the learning of ancestral sequences and provide an algorithm for reconstructing a sub-forest of the tree which is reliable given available data, without requiring a-priori known bounds on the edge lengths of the tree. Our methods are based on an intuitive minimum spanning tree approach and run in &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;3&lt;/sup&gt;) time. For the case of full reconstruction of trees with edges under the phase transition, we maintain the same asymptotic sequence length requirements as in Daskalakis et al. (Proc. of the 38th Annual STOC, pp. 159–168, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r3&quot;&gt;2006&lt;/span&gt;), despite the considerably faster running time.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9644-4</link>
+      <pubDate>2013-06-01</pubDate>
+      <guid>10.1007/s00453-012-9644-4</guid>
+    </item>
+    <item>
+      <title>A Lower Bound of 1+&lt;em class=&quot;a-plus-plus&quot;&gt;φ&lt;/em&gt; for Truthful Scheduling Mechanisms</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We study the mechanism design version of the unrelated machines scheduling problem, which is at the core of Algorithmic Game Theory and was first proposed and studied in a seminal paper of Nisan and Ronen. We give an improved lower bound of 1+&lt;em class=&quot;a-plus-plus&quot;&gt;φ&lt;/em&gt;≈2.618 on the approximation ratio of deterministic truthful mechanisms for the makespan. The proof is based on a recursive preprocessing argument which yields a strictly increasing series of new lower bounds for each fixed number of machines &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;≥4.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9634-6</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9634-6</guid>
+    </item>
+    <item>
+      <title>Maximum Matching in Regular and Almost Regular Graphs</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We present an &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;2&lt;/sup&gt;log&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;)-time algorithm that finds a maximum matching in a regular graph with &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; vertices. More generally, the algorithm runs in &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;rn&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;2&lt;/sup&gt;log&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;) time if the difference between the maximum degree and the minimum degree is less than &lt;em class=&quot;a-plus-plus&quot;&gt;r&lt;/em&gt;. This running time is faster than applying the fastest known general matching algorithm that runs in &lt;span class=&quot;a-plus-plus inline-equation id-i-eq1&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$O(\sqrt{n}m)$&lt;/span&gt;
+                      &lt;/span&gt;-time for graphs with &lt;em class=&quot;a-plus-plus&quot;&gt;m&lt;/em&gt; edges, whenever &lt;em class=&quot;a-plus-plus&quot;&gt;m&lt;/em&gt;=&lt;em class=&quot;a-plus-plus&quot;&gt;ω&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;rn&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;1.5&lt;/sup&gt;log&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;).&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9625-7</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9625-7</guid>
+    </item>
+    <item>
+      <title>Fast Maximal Cliques Enumeration in Sparse Graphs</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;In this paper, we consider the problem of generating all maximal cliques in a sparse graph in polynomial delay. Given a graph &lt;em class=&quot;a-plus-plus&quot;&gt;G&lt;/em&gt;=(&lt;em class=&quot;a-plus-plus&quot;&gt;V&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;E&lt;/em&gt;) with &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt; vertices and &lt;em class=&quot;a-plus-plus&quot;&gt;m&lt;/em&gt; edges, the latest and fastest polynomial delay algorithm for sparse graphs enumerates all maximal cliques in &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;4&lt;/sup&gt;) time delay, where &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt; is the maximum degree of vertices. However, it requires an &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;⋅&lt;em class=&quot;a-plus-plus&quot;&gt;m&lt;/em&gt;) preprocessing time. We improve it in two aspects. First, our algorithm does not need preprocessing. Therefore, our algorithm is a truly polynomial delay algorithm. Second, our algorithm enumerates all maximal cliques in &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;⋅&lt;em class=&quot;a-plus-plus&quot;&gt;H&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;3&lt;/sup&gt;) time delay, where &lt;em class=&quot;a-plus-plus&quot;&gt;H&lt;/em&gt; is the so called H-value of a graph or equivalently it is the smallest integer satisfying |{&lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;∈&lt;em class=&quot;a-plus-plus&quot;&gt;V&lt;/em&gt;∣&lt;em class=&quot;a-plus-plus&quot;&gt;δ&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;)≥&lt;em class=&quot;a-plus-plus&quot;&gt;H&lt;/em&gt;}|≤&lt;em class=&quot;a-plus-plus&quot;&gt;H&lt;/em&gt; given &lt;em class=&quot;a-plus-plus&quot;&gt;δ&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;) as the degree of a vertex. In real-world network data, &lt;em class=&quot;a-plus-plus&quot;&gt;H&lt;/em&gt; usually is a small value and much smaller than &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9632-8</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9632-8</guid>
+    </item>
+    <item>
+      <title>Engineering a New Algorithm for Distributed Shortest Paths on Dynamic Networks</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We study the problem of dynamically updating &lt;em class=&quot;a-plus-plus&quot;&gt;all-pairs shortest paths&lt;/em&gt; in a distributed network while edge update operations occur to the network. We consider the practical case of a dynamic network in which an edge update can occur while one or more other edge updates are under processing. A node of the network might be affected by a subset of these changes, thus being involved in the concurrent executions related to such changes.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;In this paper, we provide a new algorithm for this problem, and experimentally compare its performance with respect to those of the most popular solutions in the literature: the classical distributed Bellman-Ford method, which is still used in real network and implemented in the RIP protocol, and DUAL, the Diffuse Update ALgorithm, which is part of CISCO’s widely used EIGRP protocol. As input to the algorithms, we used both real-world and artificial instances of the problem. The experiments performed show that the space occupancy per node required by the new algorithm is smaller than that required by both Bellman-Ford and DUAL. In terms of messages, the new algorithm outperforms both Bellman-Ford and DUAL on the real-world topologies, while on artificial instances, the new algorithm sends a number of messages that is more than that of DUAL and much smaller than that of Bellman-Ford.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9623-9</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9623-9</guid>
+    </item>
+    <item>
+      <title>Donation Center Location Problem</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We introduce and study the &lt;em class=&quot;a-plus-plus&quot;&gt;donation center location&lt;/em&gt; problem, which has an additional application in network testing and may also be of independent interest as a general graph-theoretic problem. Given a set of agents and a set of centers, where agents have preferences over centers and centers have capacities, the goal is to open a subset of centers and to assign a maximum-sized subset of agents to their most-preferred opened centers, while respecting the capacity constraints.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We prove that in general, the problem is hard to approximate within &lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;
+                      &lt;sup class=&quot;a-plus-plus&quot;&gt;1/2−&lt;em class=&quot;a-plus-plus&quot;&gt;ϵ&lt;/em&gt;
+                      &lt;/sup&gt; for any &lt;em class=&quot;a-plus-plus&quot;&gt;ϵ&lt;/em&gt;&amp;gt;0. In view of this, we investigate two special cases. In one, every agent has a bounded number of centers on its preference list, and in the other, all preferences are induced by a line-metric. We present constant-factor approximation algorithms for the former and exact polynomial-time algorithms for the latter.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9633-7</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9633-7</guid>
+    </item>
+    <item>
+      <title>Greedy &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;-Approximation Algorithm for Covering with Arbitrary Constraints and Submodular Cost</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;This paper describes a simple greedy &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;-approximation algorithm for any covering problem whose objective function is submodular and non-decreasing, and whose feasible region can be expressed as the intersection of arbitrary (closed upwards) covering constraints, each of which constrains at most &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt; variables of the problem. (A simple example is &lt;span class=&quot;a-plus-plus emphasis type-small-caps&quot;&gt;Vertex Cover&lt;/span&gt;, with &lt;em class=&quot;a-plus-plus&quot;&gt;Δ&lt;/em&gt;=2.) The algorithm generalizes previous approximation algorithms for fundamental covering problems and online paging and caching problems.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9629-3</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9629-3</guid>
+    </item>
+    <item>
+      <title>Tile Complexity of Approximate Squares</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;The standard Tile Assembly Model (TAM) of Winfree (Algorithmic self-assembly of DNA, Ph.D. thesis, &lt;span class=&quot;a-plus-plus citation-ref citationid-c-r31&quot;&gt;1998&lt;/span&gt;) is a mathematical theory of crystal aggregations via monomer additions with applications to the emerging science of DNA self-assembly. Self-assembly under the rules of this model is programmable and can perform Turing universal computation. Many variations of this model have been proposed and the canonical problem of assembling squares has been studied extensively.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We consider the problem of building approximate squares in TAM. Given any &lt;span class=&quot;a-plus-plus inline-equation id-i-eq1&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\varepsilon \in (0,\frac{1}{4}]$&lt;/span&gt;
+                      &lt;/span&gt; we show how to construct squares whose sides are within (1±&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)&lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt; of any given positive integer &lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt; using &lt;span class=&quot;a-plus-plus inline-equation id-i-eq2&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$O( \frac{\log \frac{1}{\varepsilon}}{\log \log\frac{1}{\varepsilon}} + \frac{\log \log \varepsilon N}{\log \log \log \varepsilon N} )$&lt;/span&gt;
+                      &lt;/span&gt; tile types. We prove a matching lower bound by showing that &lt;span class=&quot;a-plus-plus inline-equation id-i-eq3&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$\varOmega( \frac{\log \frac{1}{\varepsilon}}{\log \log\frac{1}{\varepsilon}} + \frac{\log \log \varepsilon N}{\log \log \log \varepsilon N} )$&lt;/span&gt;
+                      &lt;/span&gt; tile types are necessary almost always to build squares of required approximate dimensions. In comparison, the optimal construction for a square of side exactly &lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt; in TAM uses &lt;span class=&quot;a-plus-plus inline-equation id-i-eq4&quot;&gt;
+                        
+                        &lt;span class=&quot;a-plus-plus equation-source format-t-e-x&quot;&gt;$O(\frac{\log N}{\log \log N})$&lt;/span&gt;
+                      &lt;/span&gt; tile types.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;The question of constructing approximate squares has been recently studied in a modified tile assembly model involving concentration programming. All our results are trivially translated into the concentration programming model by assuming arbitrary (non-zero) concentrations for our tile types. Indeed, the non-zero concentrations could be chosen by an adversary and our results would still hold.&lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Our construction can get highly accurate squares using very few tile types and are feasible starting from values of &lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt; that are orders of magnitude smaller than the best comparable constructions previously suggested. At an accuracy of &lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;=0.01, the number of tile types used to achieve a square of size 10&lt;sup class=&quot;a-plus-plus&quot;&gt;7&lt;/sup&gt; is just 58 and our constructions are proven to work for all &lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt;≥13130. If the concentrations of the tile types are carefully chosen, we prove that our construction assembles an &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;×&lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt; square in optimal assembly time &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;) where (1−&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)&lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt;≤&lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;≤(1+&lt;em class=&quot;a-plus-plus&quot;&gt;ε&lt;/em&gt;)&lt;em class=&quot;a-plus-plus&quot;&gt;N&lt;/em&gt;.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9620-z</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9620-z</guid>
+    </item>
+    <item>
+      <title>Negative Interactions in Irreversible Self-assembly</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;This paper explores the use of negative (i.e., repulsive) interactions in the abstract Tile Assembly Model defined by Winfree. Winfree in his Ph.D. thesis postulated negative interactions to be physically plausible, and Reif, Sahu, and Yin studied them in the context of &lt;em class=&quot;a-plus-plus&quot;&gt;reversible&lt;/em&gt; attachment operations. We investigate the power of negative interactions with &lt;em class=&quot;a-plus-plus&quot;&gt;irreversible&lt;/em&gt; attachments, and we achieve two main results. Our first result is an impossibility theorem: after &lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt; steps of assembly, Ω(&lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt;) tiles will be forever bound to an assembly, unable to detach. Thus negative glue strengths do not afford unlimited power to reuse tiles. Our second result is a positive one: we construct a set of tiles that can simulate an &lt;em class=&quot;a-plus-plus&quot;&gt;s&lt;/em&gt;-space-bounded, &lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt;-time-bounded Turing machine, while ensuring that no intermediate assembly grows larger than &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;s&lt;/em&gt;), rather than &lt;em class=&quot;a-plus-plus&quot;&gt;O&lt;/em&gt;(&lt;em class=&quot;a-plus-plus&quot;&gt;s&lt;/em&gt;⋅&lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt;) as required by the standard Turing machine simulation with tiles. In addition to the space-bounded Turing machine simulation, we show another example application of negative glues: reducing the number of tile types required to assemble “thin” (&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;×&lt;em class=&quot;a-plus-plus&quot;&gt;o&lt;/em&gt;(log&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;/loglog&lt;em class=&quot;a-plus-plus&quot;&gt;n&lt;/em&gt;)) rectangles.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9631-9</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9631-9</guid>
+    </item>
+    <item>
+      <title>Approximate Shortest Paths Avoiding a Failed Vertex: Near Optimal Data Structures for Undirected Unweighted Graphs</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Let &lt;em class=&quot;a-plus-plus&quot;&gt;G&lt;/em&gt;=(&lt;em class=&quot;a-plus-plus&quot;&gt;V&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;E&lt;/em&gt;) be an undirected unweighted graph. A path between any two vertices &lt;em class=&quot;a-plus-plus&quot;&gt;u&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;∈&lt;em class=&quot;a-plus-plus&quot;&gt;V&lt;/em&gt; is said to be &lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt;-approximate shortest path if its length is at most &lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt; times the length of the shortest path between &lt;em class=&quot;a-plus-plus&quot;&gt;u&lt;/em&gt; and &lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;. We address the problem of building a compact data structure which can efficiently answer the following query for any &lt;em class=&quot;a-plus-plus&quot;&gt;u&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;,&lt;em class=&quot;a-plus-plus&quot;&gt;x&lt;/em&gt;∈&lt;em class=&quot;a-plus-plus&quot;&gt;V&lt;/em&gt; and &lt;em class=&quot;a-plus-plus&quot;&gt;t&lt;/em&gt;&amp;gt;1: &lt;span class=&quot;a-plus-plus block-quote&quot;&gt;
+                        &lt;p class=&quot;a-plus-plus&quot;&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;Report&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;t-approximate shortest path between&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;u&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;and&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;v&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;when vertex&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;x&lt;/em&gt;
+                          &lt;em class=&quot;a-plus-plus&quot;&gt;fails&lt;/em&gt;.&lt;/p&gt;
+                      &lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;We present data structures for the single source as well as all-pairs versions of this problem. The query time guaranteed by our data structures is optimal up to a constant factor. Moreover, the size of each of them &lt;em class=&quot;a-plus-plus&quot;&gt;nearly&lt;/em&gt; matches the size of the corresponding data structure with no failures.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9621-y</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9621-y</guid>
+    </item>
+    <item>
+      <title>Isotonic Regression via Partitioning</title>
+      <description>
+                    &lt;h3 class=&quot;a-plus-plus&quot;&gt;Abstract&lt;/h3&gt;
+                    &lt;p class=&quot;a-plus-plus&quot;&gt;Algorithms are given for determining weighted isotonic regressions satisfying order constraints specified via a directed acyclic graph (DAG). For the &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;1&lt;/sub&gt; metric a partitioning approach is used which exploits the fact that &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;1&lt;/sub&gt; regression values can always be chosen to be data values. Extending this approach, algorithms for binary-valued &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;1&lt;/sub&gt; isotonic regression are used to find &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;p&lt;/em&gt;
+                      &lt;/sub&gt; isotonic regressions for 1&amp;lt;&lt;em class=&quot;a-plus-plus&quot;&gt;p&lt;/em&gt;&amp;lt;∞. Algorithms are given for trees, 2-dimensional and multidimensional orderings, and arbitrary DAGs. Algorithms are also given for &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;
+                        &lt;em class=&quot;a-plus-plus&quot;&gt;p&lt;/em&gt;
+                      &lt;/sub&gt; isotonic regression with constrained data and weight values, &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;1&lt;/sub&gt; regression with unweighted data, and &lt;em class=&quot;a-plus-plus&quot;&gt;L&lt;/em&gt;
+                      &lt;sub class=&quot;a-plus-plus&quot;&gt;1&lt;/sub&gt; regression for DAGs where there are multiple data values at the vertices.&lt;/p&gt;
+                  </description>
+      <link>http://link.springer.com/10.1007/s00453-012-9628-4</link>
+      <pubDate>2013-05-01</pubDate>
+      <guid>10.1007/s00453-012-9628-4</guid>
+    </item>
+  </channel>
+</rss>
