@@ -252,7 +252,7 @@ include("includes/footer.php");
         function findStuff() {
             $(".find_feed").each(function(n) {
                 var feed = $(this).attr("name").split("|");
-                $(this).load("includes/feedme.php", {type: feed[4], feed: feed[0], count: feed[1], show_desc: feed[2], show_feed: feed[3]});
+                $(this).load("includes/feedme.php", {proxy: feed[5], type: feed[4], feed: feed[0], count: feed[1], show_desc: feed[2], show_feed: feed[3]});
             });
 
         }

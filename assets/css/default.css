@@ -1,14 +1,33 @@
 /* CSS Document for SubjectsPlus, public display (i.e., subjects/ folder ) */
 
-/* reset - blueprint mod */
+/*JW - Underline links in Feed titles*/
+.find_feed a {
+     text-decoration: underline;
+}
+
+/* JW - New Books IFRAME Style */
+.nbiframe{
+    /*width:200px; */
+   /* height:360px;*/
+    height:380px;
+    width: 100%;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+}​
+
+/* reset - blueprint mod*/
 * {padding: 0; margin: 0;}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
-body {line-height: 1.5;}
-/* Tables still need 'cellspacing="0"' in the markup. */
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;font-weight: inherit;font-style: inherit;vertical-align: baseline;}
+/* Tables still need 'cellspacing="0"' in the markup.*/
 table { border-collapse: separate; border-spacing: 0; }
 caption, th, td { text-align: left; font-weight: normal; }
 table, td, th { vertical-align:top; }
+
+table.content { border-collapse: collapse; border:1px solid #CCC; width:100%;}
+table.content td {text-align:left; padding:2px; border:1px solid #CCC;}
+table.content th {background-color: #e6EEEE;border: 1px solid #CCC;padding: 2px;text-align: center;}
+
 /* Remove annoying border on linked images. */
 a img { border: none; }
 
@@ -19,7 +38,7 @@ a img { border: none; }
 .no-pad-left{padding-left: 0 !important}
 .no-pad-right{padding-right: 0 !important}
 
-body {
+/*body {
     margin: 0 0 0 5px;
     padding: 0;
     font-family: Verdana, Arial, sans-serif;
@@ -29,24 +48,22 @@ body {
     color: #000;
     margin-left: auto;
     margin-right: auto;
-    background: url("../images/grid.png") repeat scroll 0 0 #FFFFFF;
+    background-color: #efefef;
 }
-
-
-/* changed from #wrap to main-content per RG */
-
-#main-content {
+*/
+#wrap {
     position: relative;
     text-align: left;
     padding: 0;
     margin: 0px auto;
     width: 95%;
-    /*min-width: 550px;*/
+    min-width: 550px;
+    /* JW - Removed max width for new books images */
     max-width: 1100px;
     background-color: transparent;
 }
 
-html>body #main-content {
+html>body #wrap {
     width: 95%;
 }
 
@@ -58,14 +75,15 @@ a:link {
     color: #40659B;
 }
 
-a:visited {
+/*a:visited {
     color: #551A8B;
-}
+}*/
 
 a:hover {
     color: #cc6666;
 }
 
+/*JW - Center text. Removed margin-left*/
 h1 {
     color: #333333;
     font-family: "Helvetica Rounded","Arial Rounded","Helvetica Neue",Helvetica,Geneva,sans-serif;
@@ -73,7 +91,8 @@ h1 {
     font-weight: bold;
     padding: 0.5em 0 1em;
     text-shadow: 0 2px 3px #CCCCCC;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
+    text-align: center;
 }
 
 h2 {
@@ -93,15 +112,9 @@ h3 {
 
 em {font-style: italic;}
 
-
-img {
-    height: auto !important;
-    max-width: 100%;
-}
-
 #header {
     background: #fff;
-    height: 3em;
+    height: 5em;
     padding: 1em 3em;
     margin: 0 0 2em 0;
     border-bottom: 1px solid #ccc;
@@ -114,6 +127,7 @@ img {
     margin: 0px auto;
     width: 100%;
     min-width: 550px;
+    /* JW - Removed max width for new books images */
     max-width: 1100px;
     background-color: transparent;
 }
@@ -156,11 +170,13 @@ img {
 }
 
 #leftcol {
-    clear: both; float: left; width: 70%;
+    /*clear: both; float: left; width: 70%;*/
+    clear: both; float: left; width: 65%;
 }
 
 #rightcol {
-    float: right; width: 28%; margin-left: 2%;
+    /*float: right; width: 28%; margin-left: 2%;*/
+    float: right; width: 33%; margin-left: 2%;
 }
 
 #rightcol p,#rightcol ul,#rightcol dl {
@@ -262,17 +278,19 @@ img {
     z-index: 50;
     border: 1px solid #ccc;
     padding: 0px;
-    font-size: 10pt;
+    /* JW - change font-size from 12 to 11 */
+    font-size: 11pt;
     -moz-border-radius: 5px;
     -khtml-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 
 }
+/*JW - Remove Heigth to allow for multiline titles*/
 .titlebar {
     color: #333;
     position: relative;
-    height: 2em;
+    /*height: 2em;*/
     padding: 0px 0;
     margin: 0;
     top: 0px;
@@ -285,7 +303,7 @@ img {
     -moz-border-radius-topright: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #333;
+    background-color: #004990;
 
 }
 
@@ -303,7 +321,7 @@ img {
 
 }
 
-.titlebar_options { 
+.titlebar_options {
 
     display: none;
 
@@ -366,7 +384,7 @@ div.pluslet form {
     margin-left: -5px;
     margin-right: -5px;
     background-color: #CFDAE6;
-}				
+}
 
 
 .note {
@@ -418,7 +436,7 @@ div.pluslet form {
     border-radius: 3px;
     border: 1px solid #ccc;
     padding: .2em .6em;
-    margin: .5em;
+    margin: .5em .5em 0 0;
     font-size: 1em;
 }
 #letterhead select {
@@ -563,7 +581,7 @@ table.istem_listing h2 {
 	margin:1em;
 }
 
-/* The next few determine how peoples' names and pix appear in staff.php & staff_details.php 
+/* The next few determine how peoples' names and pix appear in staff.php & staff_details.php
 staff_photo2 is in the sidebar of the subject results page (which requires a float)*/
 
 .staff_photo {
@@ -635,12 +653,13 @@ h2.dept_header {
 
 
 /* Used throughout for print that is um smaller  */
-.smaller {font-size: 8pt; }
+/* JW - changed from 8 to 10 */
+.smaller {font-size: 10pt; }
 
 #listing a:hover {
     text-decoration: underline;
 
-} 
+}
 
 #listing a   {
     text-decoration: none;
@@ -791,113 +810,7 @@ ul.ui-autocomplete li a{
     cursor:pointer;
 }
 
-/* Videos page */
+/******************************* Local Mills Styles *********************************/
 
-
-.vid_container {
-  clear: both;
-  float: left; 
-  margin-right: 25px; 
-  margin-bottom: 2em; 
-  background-color: #333; 
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 10px;
-  width: 550px;
-  color: #fff;
-}
-
-
-div.vid_container img {
-  float: left; 
-  margin-right: 20px; 
-  margin-bottom: 0px; 
-  background-color: #4F4E4E; 
-  width: 150px;
-  cursor: pointer;
-  list-style: none outside none;
-  padding: 7px;
-  position: relative;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-
-}
-
-
-
-div.vid_container h3 {
-  font-size: 1.3em;
-  color: #B0CBE8 !important;
-  margin-top: 0;
-  cursor: pointer;
-}
-
-div.vid_container p {
-  font-size: 1em;
-  color: #fff;
-  margin-top: 0;
-}
-
-div.vid_container a {
-  color: #B0CBE8;
-  cursor: pointer;
-}
-
-div.vid_container p.runtime {margin-top: -10px; font-size: smaller;}
-
-.video_thumb {
-  float: left; 
-  margin-right: 25px; 
-  margin-bottom: 20px; 
-  background-color: #333; 
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-div.video_thumb img {
-  float: left;
-  margin-left: 10px;
-
-}
-.video_list {
-  clear: both; float: left; width: 500px;
-}
-
-/* Override Made Easy
- * The following styles are commonly overridden to make simple colour customizations
- * I did a couple to get ya started
-*/
-
-.pluslet {
-    border: 1px solid #ccc;
-    box-shadow: 5px 5px 7px #e0e0e0;
-}
-
-.pluslet_simple {
-    border: 1px solid #ccc;
-}
-
-.titlebar {
-
-}
-
-.titlebar_text {
-
-}
-
-/* Next lines override the regular pluslet to create a heading */
-.plusheading, .type-heading { width: 70%; padding: 0; text-transform:uppercase;}
-div.plusheading .pluslet_body, div.type-heading .pluslet_body {position: relative;padding:0;}
-div.type-heading .titlebar {}
-
-.evenrow {
-    background-color: #E3E1D9;
-}
+/* mailto link */
+a[href^='mailto'] { background: url(images/mailto.png)  no-repeat center right;  padding-right: 13px;}

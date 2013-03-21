@@ -8,6 +8,9 @@
  *   @date Feb 2011
  *   @todo 
  */
+
+/* JW - Added proxy for feed URLS - Lines 106-114 */
+
 class sp_Pluslet_Feed extends sp_Pluslet {
 
     public function __construct($pluslet_id, $flag="", $subject_id, $isclone=0) {
@@ -28,20 +31,14 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             $num_items = $jobj->{'num_items'};
             $show_desc = $jobj->{'show_desc'};
             $show_feed = $jobj->{'show_feed'};
+             /* JW - Added proxy for feed URLS */
+            $proxy = $jobj->{'proxy'};
             
-            if ($num_items == "") { $num_items = 5; } // need to pass something along
-
-        } else {
-            $feed_type = "";
-            $num_items = 5;
-            $show_desc = "";
-            $show_feed = "";            
+            if ($num_items == "") { $num_items = 5; }
         }
 
         if ($action == "edit") {
 
-            global $title_input_size; // alter size based on column
-            
             //////////////////////
             // New or Existing?
             //////////////////////
@@ -58,20 +55,23 @@ class sp_Pluslet_Feed extends sp_Pluslet {
                 $this->_pluslet_bonus_classes = "unsortable";
                 $this->_pluslet_id_field = $new_id;
                 $this->_pluslet_name_field = "new-pluslet-Feed";
-                $this->_title = "<input type=\"text\" class=\"required_field\" id=\"pluslet-new-title-$new_id\" name=\"new_pluslet_title\" value=\"$this->_title\" size=\"$title_input_size\" />";
+                $this->_title = "<input type=\"text\" class=\"required_field $clone\" id=\"pluslet-new-title-$new_id\" name=\"new_pluslet_title\" value=\"$this->_title\" size=\"$title_input_size\" />";
                 $this_instance = "pluslet-new-body-$new_id";
             }
 
+               if ($num_items == "") { $num_items = 5; }
             // some translations . . .
             $vYes = _("Yes");
             $vNo = _("No");
             $vRss1 = _("Display");
             $vRss2 = _("items<br />Show descriptions?");
 
-            
+            global $title_input_size; // alter size based on column
             // Generate our dropdown
             $dd_name = "feed_type-$current_id";
-            $dd_array = array("Delicious", "RSS", "Flickr", "Twitter");
+            /* JW - Added NewBooks for GoodReads. Removed all others except RSS
+            $dd_array = array("Delicious", "RSS", "Flickr", "Twitter", "NewBooks"); */
+            $dd_array = array("RSS", "NewBooks");
 
             $typeMe = new sp_Dropdown($dd_name, $dd_array, $feed_type);
             $feed_type_dd = $typeMe->display();
@@ -79,7 +79,7 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             $this->_body = "<br /><input type=\"text\" name=\"$this_instance\" class=\"required_field\" value=\"$this->_body\" size=\"$title_input_size\" />
             $feed_type_dd        
             <br />
-            " . _("Enter RSS feed or username/tag (for delicious)");
+            " . _("Enter RSS feed or GoodReads Shelf Name");
             $this->_body .= "
             
             <p style=\"font-size: 11px;padding-top: 3px;\">
@@ -102,7 +102,17 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             if ($show_feed == 0) {
                 $this->_body .= " checked=\"checked\"";
             }
+            $this->_body .= " /> $vNo<br />
+    Proxy URL? <input name=\"proxy-$current_id\" type=\"radio\" value=\"1\"";
+            if ($proxy == 1) {
+                $this->_body .= " checked=\"checked\"";
+            }
+            $this->_body .= "> $vYes <input name=\"proxy-$current_id\" type=\"radio\" value=\"0\" ";
+            if ($proxy == 0) {
+                $this->_body .= " checked=\"checked\"";
+            }
             $this->_body .= " /> $vNo</p>
+
 <div>\n";
 
             parent::startPluslet();
@@ -114,12 +124,10 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             // Note we hide the Feed parameters in the name field
             $vRSSLoading = _("Loading ...");
             $feed = trim($this->_body);
-            $this->_body = "<p class=\"find_feed\" name=\"$feed|$num_items|$show_desc|$show_feed|$feed_type\">$vRSSLoading</p>";
+            /* JW - Added proxy for feed URLS */
+            $this->_body = "<p class=\"find_feed\" name=\"$feed|$num_items|$show_desc|$show_feed|$feed_type|$proxy\">$vRSSLoading</p>";
 
-            // notitle hack
-            if (trim($this->_title) == "notitle") { $hide_titlebar = 1;} else {$hide_titlebar = 0;}
-            
-            parent::assemblePluslet($hide_titlebar);
+            parent::assemblePluslet();
 
             return $this->_pluslet;
         }

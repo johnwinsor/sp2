@@ -158,7 +158,7 @@ class PGFeed {
   }
 
   public function stripMarkup() {
-  	$this->strip = 0;
+  	$this->strip = 1;
   }
   
   public function setReturns($returns) {
@@ -213,8 +213,7 @@ class PGFeed {
     // RSS lists
     $this->channelElements = array("title","link","description","language","copyright","managingEditor","webMaster","pubDate","lastBuildDate","category","generator","docs","ttl","rating","skipHours","skipDays");
     // cloud, image, and textInput omitted for special processing
-    //JW - Added "book_large_image_url" and "isbn" for Good Reads feed
-    $this->itemElements = array("title","link","author","category","comments","guid","pubDate","source","book_large_image_url","book_medium_image_url","isbn");
+    $this->itemElements = array("title","link","author","category","comments","guid","pubDate","source","book_large_image_url","isbn","book_description");
     // description and enclosure omitted for special processing
     $this->cloudAttributes = array("domain","port","path","registerProcedure","protocol");
     $this->imageElements = array("url","title","link","height","width","description");

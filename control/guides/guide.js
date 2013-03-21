@@ -271,6 +271,7 @@ function setupSaveButton( lstrSelector )
 				var pnum_items = jQuery('input[name=displaynum-'+lintID+']').attr('value');
 				var pshow_desc = jQuery('input[name=showdesc-'+lintID+']:checked').val();
 				var pshow_feed = jQuery('input[name=showfeed-'+lintID+']:checked').val();
+                                             var pshow_proxy = jQuery('input[name=proxy-'+lintID+']:checked').val();
 
 				var pspecial = '{"num_items":'
 				+ pnum_items +
@@ -278,6 +279,8 @@ function setupSaveButton( lstrSelector )
 				+ pshow_desc +
 				', "show_feed": '
 				+ pshow_feed +
+                                            ', "proxy": '
+                                            + pshow_proxy +
 				', "feed_type": "'
 				+ pfeed_type +
 				'"}';
@@ -741,7 +744,8 @@ function refreshFeeds() {
             feed: feed[0],
             count: feed[1],
             show_desc: feed[2],
-            show_feed: feed[3]
+            show_feed: feed[3],
+            proxy: feed[5]
         });
     });
 

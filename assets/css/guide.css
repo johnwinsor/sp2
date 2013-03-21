@@ -125,41 +125,37 @@ img { padding-top: 0;}
     padding-top: 5px;
 }
 
-
-#container-0 {
+/*JW - Removed width*/
+#portal-column-0 {
     float: left;
-    width: 15%;
+    /*width: 15%;*/
     padding: 5px;
 }
 
-#container-0 h2 {
+#portal-column-0 h2 {
     font-size: 16px;
     margin: 1px;
     background-color: none;
     padding: 2px;
 }
 
-#container-0 h3 {
+#portal-column-0 h3 {
     font-size: 14px;
     margin: 1px;
 }
 
-#container-0 {
+/*JW - Removed width*/
+#portal-column-1 {
     float: left;
+    /*width: 60%;*/
     padding: 10px;
     background-color: transparent;
 }
 
-#container-1 {
+/*JW - Removed width*/
+#portal-column-2 {
     float: left;
-    width: 60%;
-    padding: 10px;
-    background-color: transparent;
-}
-
-#container-2 {
-    float: left;
-    width: 35%;
+    /*width: 35%;*/
     padding: 10px;
     background-color: transparent;
 }
@@ -305,13 +301,25 @@ img { padding-top: 0;}
 
 }
 
+/*JW - Removed width and float*/
+#dropspot-center-1 {
+    /*float: right;*/
+    /*width: 30%;*/
+    min-width: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-
-#dropspot-left-1, #dropspot-center-1, #dropspot-sidebar-1 {float: left; }
+/*JW - Removed width and float*/
+#dropspot-sidebar-1 {
+    /*float: left;*/
+    /*width: 30%;*/
+    min-width: 170px;
+}
 
 /* Moves the dropspot text down a smidgen (8 smidgens, to be precise) */
 
-#dropspot-left-1 img, #dropspot-center-1 img, #dropspot-sidebar-1 img { margin-top: 8px; margin-left: 1em;}
+#dropspot-center-1 img, #dropspot-sidebar-1 img { margin-top: 8px;}
 
 /* When you hover over one of the two drop spots, make em show */
 .drop_hover {background-color: #C03957; border: 1px solid #ccc;}
@@ -435,7 +443,7 @@ div.type-heading {
 
 .smallgrey { color: #CCCCCC; font-size: 11px; text-shadow: none;}
 
-.dropspot-text {position: relative; top: -8px; font-size: 14pt; font-weight: bold; color: #ccc; margin-right: 1em;}
+.dropspot-text {position: relative; top: -8px; font-size: 14pt; font-weight: bold; color: #ccc;}
 
 .borderless {border: none;}
 
@@ -445,32 +453,12 @@ div.type-heading {
     margin: 0 1% 1em 1%;
 }
 
-/* Override for V 3, multiple layouts */
-
-#portal-column-0, #portal-column-1, #portal-column-2  {
+/* JW - New Books IFRAME Style */
+.nbiframe {
+    /*width:200px; */
+    height:360px;
     width: 100%;
-	background-color: transparent;
-}
-
-/* Layout dropdown in header */
-
-#slider_options {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC !important;
-    border-radius: 5px 5px 5px 5px;
-    clear: left;
-    list-style-type: none;
-    margin: 0 10px 0 -12px !important;
-    padding: 0 5px 1px;
-    position: absolute;
-    top: 50px;
-    width: 250px;
-    z-index: 1000 !important;
-}
-
-#slider_options p {
-    color: #333;
-    padding: .5em;
-    font-size: smaller;
-}
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+}​
 
