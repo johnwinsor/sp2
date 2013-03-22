@@ -28,7 +28,10 @@ if ($_POST["count"]) {
 $show_desc = $_POST["show_desc"];
 $show_feed = $_POST["show_feed"];
 /* JW - Added proxy for feed URLS */
-$proxy = $_POST["proxy"];
+
+if (isset($_POST["proxy"])) {
+    $proxy = $_POST["proxy"];
+}
 
 include("../../control/includes/classes/PGFeed.php");
 
