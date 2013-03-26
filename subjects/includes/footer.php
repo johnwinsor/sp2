@@ -2,13 +2,12 @@
 </div>
 </div>
 </div>
-</div>
 
 <div id="footer">
 
 <p class="close" align="center">
 
-<?php 
+<?php
     if (isset($last_mod) && $last_mod != "") {
         print _("Revised: ") . $last_mod;
     } else {
