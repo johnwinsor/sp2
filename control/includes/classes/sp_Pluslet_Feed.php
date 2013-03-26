@@ -2,11 +2,11 @@
 
 /**
  *   @file sp_Pluslet_Feed
- *   @brief 
+ *   @brief
  *
  *   @author agdarby
  *   @date Feb 2011
- *   @todo 
+ *   @todo
  */
 
 /* JW - Added proxy for feed URLS - Lines 106-114 */
@@ -32,8 +32,10 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             $show_desc = $jobj->{'show_desc'};
             $show_feed = $jobj->{'show_feed'};
              /* JW - Added proxy for feed URLS */
-            $proxy = $jobj->{'proxy'};
-            
+             if (property_exists($jobj, 'proxy')) {
+                $proxy = $jobj->{'proxy'};
+            }
+
             if ($num_items == "") { $num_items = 5; }
         }
 
@@ -77,11 +79,11 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             $feed_type_dd = $typeMe->display();
 
             $this->_body = "<br /><input type=\"text\" name=\"$this_instance\" class=\"required_field\" value=\"$this->_body\" size=\"$title_input_size\" />
-            $feed_type_dd        
+            $feed_type_dd
             <br />
             " . _("Enter RSS feed or GoodReads Shelf Name");
             $this->_body .= "
-            
+
             <p style=\"font-size: 11px;padding-top: 3px;\">
             $vRss1 <input type=\"text\" name=\"displaynum-$current_id\" value=\"$num_items\" size=\"1\" />
             $vRss2 <input name=\"showdesc-$current_id\" type=\"radio\" value=\"1\"";
@@ -125,7 +127,11 @@ class sp_Pluslet_Feed extends sp_Pluslet {
             $vRSSLoading = _("Loading ...");
             $feed = trim($this->_body);
             /* JW - Added proxy for feed URLS */
-            $this->_body = "<p class=\"find_feed\" name=\"$feed|$num_items|$show_desc|$show_feed|$feed_type|$proxy\">$vRSSLoading</p>";
+            if (property_exists($jobj, 'proxy')) {
+                $this->_body = "<p class=\"find_feed\" name=\"$feed|$num_items|$show_desc|$show_feed|$feed_type|$proxy\">$vRSSLoading</p>";
+            } else {
+                $this->_body = "<p class=\"find_feed\" name=\"$feed|$num_items|$show_desc|$show_feed|$feed_type\">$vRSSLoading</p>";
+            }
 
             parent::assemblePluslet();
 

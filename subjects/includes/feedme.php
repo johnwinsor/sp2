@@ -28,7 +28,10 @@ if ($_POST["count"]) {
 $show_desc = $_POST["show_desc"];
 $show_feed = $_POST["show_feed"];
 /* JW - Added proxy for feed URLS */
-$proxy = $_POST["proxy"];
+
+if (isset($_POST["proxy"])) {
+    $proxy = $_POST["proxy"];
+}
 
 include("../../control/includes/classes/PGFeed.php");
 
@@ -102,7 +105,7 @@ if ($_POST["type"] != "NewBooks") {
 
 } else {
     //print $source;
-    print "<iframe class=\"nbiframe\"  src=\"http://localhost/sp2/newbooks/newbooks.php?shelf=$source\" scrolling=\"no\"></iframe>";
+    print "<iframe class=\"nbiframe\"  src=\"http://exene.mills.edu/sp2/newbooks/newbooks.php?shelf=$source\" scrolling=\"no\"></iframe>";
 
 //     print "<div class=\"gr\"><span style=\"color: #382110\">my read shelf:</span><br/><a href=\"http://www.goodreads.com/review/list/14996177?shelf=read\" title=\"Millslib's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)\"><img border=\"0\" alt=\"Millslib's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)\" src=\"http://www.goodreads.com/images/badge/badge1.jpg\"></a></div>";
 
