@@ -107,7 +107,7 @@ if (isset($use_jquery)) { print generatejQuery($use_jquery);
                         <a href="http://www.mills.edu/academics/library/library_information/faq.php">FAQ</a>
                     </li>
                     <li>
-                        <a href="<?php print $BaseURL; ?>subjects/index.php">Study Guides</a>
+                        <a href="<?php print $BaseURL; ?>subjects/index.php">Subject Guides</a>
                     </li>
                 </ul>
             </div>
