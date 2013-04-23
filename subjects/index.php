@@ -42,17 +42,21 @@ if (isset($_POST["search"])) {
 }
 
 // set up our checkboxes for guide types
-$tickboxes = "<ul>";
+if (count($guide_types) > 1) {
+    $tickboxes = "<ul>";
 
-foreach ($guide_types as $key) {
-    $tickboxes .= "<li><input type=\"checkbox\" id=\"show-" . ucfirst($key) . "\" name=\"show$key\"";
-    if ($view_type == "all" || $view_type == $key) {
-        $tickboxes .= " checked=\"checked\"";
+    foreach ($guide_types as $key) {
+        $tickboxes .= "<li><input type=\"checkbox\" id=\"show-" . ucfirst($key) . "\" name=\"show$key\"";
+        if ($view_type == "all" || $view_type == $key) {
+            $tickboxes .= " checked=\"checked\"";
+        }
+        $tickboxes .= "/>" . ucfirst($key) . " Guides</li></li>\n";
     }
-    $tickboxes .= "/>" . ucfirst($key) . " Guides</li></li>\n";
-}
 
-$tickboxes .= "</ul>";
+    $tickboxes .= "</ul>";
+} else {
+    $tickboxes = "";
+}
 
 // Get the subjects for jquery autocomplete
 $suggestibles = "";  // init
@@ -148,9 +152,9 @@ function listGuides($search = "", $type="all") {
 		 <div style=\"float: left; width: 83%;\"><a href=\"$guide_location\">" . htmlspecialchars_decode($myrow[1]) . "</a></div>
 		 <div style=\"float: left; width: 15%;\">$myrow[2]</div>
 		 </div>\n";
-        $row_count++; 
+        $row_count++;
     }
-    
+
 }
 
 ////////////////////////////
@@ -196,9 +200,9 @@ $input_box->displayBox();
                 <?php echo $tickboxes ?>
             </div>
             <?php listGuides($search, $view_type); ?>
-            </div>
         </div>
     </div>
+</div>
 
     <div  <?php print $rdiv; ?>>
         <div class="pluslet">
