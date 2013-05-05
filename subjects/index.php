@@ -219,6 +219,14 @@ $input_box->displayBox();
             <div class="pluslet_body"> <?php print $newlist; ?> </div>
         </div>
         <!-- end pluslet -->
+        <!-- start pluslet -->
+        <div class="pluslet">
+            <div class="titlebar">
+                <div class="titlebar_text"><?php print _("New Books"); ?></div>
+            </div>
+            <div><iframe scrolling="no" style="overflow:hidden;width:100%;height:600px;" frameborder="0" border="0" src="../guides-newbooks/newbooks-recent.php"></iframe></div>
+        </div>
+        <!-- end pluslet -->
         <br />
 
     </div>
