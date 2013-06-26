@@ -603,6 +603,13 @@ if ($ctags != "") {
           $icons .= " = " . _("Some full text") . "<br />";
         }
         break;
+        // jw - added paid_ejournal tag (also had to edit confiig.php)
+      case "Paid_Journals":
+        $icons.= " <img src=\"$IconPath/ejournal.gif\" border=\"0\" alt=\"" . _("eJournal") . "\" title=\"" . _("eJournal") . "\" />";
+        if ($showtext == 1) {
+          $icons .= " = " . _("eJournal") . "<br />";
+        }
+        break;
       case "openurl":
         $icons .= "<img src=\"$IconPath/openurl.png\" width=\"32\" height=\"13\" border=\"0\" alt=\"openURL\" title=\"openURL\" /> ";
         if ($showtext == 1) {
